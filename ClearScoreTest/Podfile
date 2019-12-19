@@ -1,0 +1,37 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '11.0'
+
+target 'ClearScoreTest' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+  
+  # Networking
+  pod 'Alamofire'
+  pod 'Moya'
+  pod 'Moya/RxSwift'
+  pod 'Moya-ObjectMapper/RxSwift'
+  
+  # Reactive
+  pod 'RxSwift',    '~> 4.0'
+  pod 'RxCocoa',    '~> 4.0'
+  pod 'Moya-ObjectMapper/RxSwift'
+  
+  # switf utils
+  pod 'Swinject'
+  pod 'Hue'
+  
+  target 'ClearScoreTestTests' do
+    inherit! :search_paths
+    # Pods for testing
+    # Pods for testing
+    pod 'RxBlocking'
+    pod 'RxTest'
+    pod 'Mockit'
+  end
+
+  target 'ClearScoreTestUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
