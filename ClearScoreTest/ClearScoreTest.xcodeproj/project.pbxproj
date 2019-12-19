@@ -46,6 +46,9 @@
 		9DA5DC2A23AC2B91007E4EA5 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5DC2923AC2B91007E4EA5 /* CircularProgressView.swift */; };
 		9DA5DC3223AC340A007E4EA5 /* MoviesRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5DC2D23AC3409007E4EA5 /* MoviesRepositoryTests.swift */; };
 		9DA5DC3323AC340A007E4EA5 /* MockMoviesServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5DC3123AC340A007E4EA5 /* MockMoviesServices.swift */; };
+		9DA5DC3F23AC38A0007E4EA5 /* UIView+Anchors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5DC3C23AC38A0007E4EA5 /* UIView+Anchors.swift */; };
+		9DA5DC4023AC38A0007E4EA5 /* ImageViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5DC3D23AC38A0007E4EA5 /* ImageViews.swift */; };
+		9DA5DC4123AC38A0007E4EA5 /* Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5DC3E23AC38A0007E4EA5 /* Views.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +115,9 @@
 		9DA5DC2923AC2B91007E4EA5 /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
 		9DA5DC2D23AC3409007E4EA5 /* MoviesRepositoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesRepositoryTests.swift; sourceTree = "<group>"; };
 		9DA5DC3123AC340A007E4EA5 /* MockMoviesServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockMoviesServices.swift; sourceTree = "<group>"; };
+		9DA5DC3C23AC38A0007E4EA5 /* UIView+Anchors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Anchors.swift"; sourceTree = "<group>"; };
+		9DA5DC3D23AC38A0007E4EA5 /* ImageViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViews.swift; sourceTree = "<group>"; };
+		9DA5DC3E23AC38A0007E4EA5 /* Views.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Views.swift; sourceTree = "<group>"; };
 		9E3DECE61E6A0529EC0FD88C /* Pods-ClearScoreTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClearScoreTestTests.debug.xcconfig"; path = "Target Support Files/Pods-ClearScoreTestTests/Pods-ClearScoreTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A50C9A49CCB76394A39937D3 /* Pods_ClearScoreTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClearScoreTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB29433F1E9A8718379C10B9 /* Pods_ClearScoreTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClearScoreTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -267,8 +273,9 @@
 		9DA5DBE523AC2148007E4EA5 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				9DA5DC3B23AC389F007E4EA5 /* Extensions */,
 				9DA5DBE623AC2148007E4EA5 /* Common */,
-				9DA5DBE923AC2148007E4EA5 /* Score */,
+				9DA5DBE923AC2148007E4EA5 /* Home */,
 				9DA5DBEF23AC2148007E4EA5 /* Model */,
 				9DA5DBF123AC2148007E4EA5 /* Helper */,
 			);
@@ -285,7 +292,7 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
-		9DA5DBE923AC2148007E4EA5 /* Score */ = {
+		9DA5DBE923AC2148007E4EA5 /* Home */ = {
 			isa = PBXGroup;
 			children = (
 				9DA5DBEA23AC2148007E4EA5 /* HomeViewModel.swift */,
@@ -293,7 +300,7 @@
 				9DA5DBEC23AC2148007E4EA5 /* HomeViewController.swift */,
 				9DA5DBED23AC2148007E4EA5 /* HomeRouter.swift */,
 			);
-			path = Score;
+			path = Home;
 			sourceTree = "<group>";
 		};
 		9DA5DBEF23AC2148007E4EA5 /* Model */ = {
@@ -474,6 +481,16 @@
 				9DA5DC3123AC340A007E4EA5 /* MockMoviesServices.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		9DA5DC3B23AC389F007E4EA5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9DA5DC3C23AC38A0007E4EA5 /* UIView+Anchors.swift */,
+				9DA5DC3D23AC38A0007E4EA5 /* ImageViews.swift */,
+				9DA5DC3E23AC38A0007E4EA5 /* Views.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -714,6 +731,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DA5DC3F23AC38A0007E4EA5 /* UIView+Anchors.swift in Sources */,
 				9DA5DC0C23AC2148007E4EA5 /* Colors.swift in Sources */,
 				9DA5DBE423AC211E007E4EA5 /* NetworkingAssembly.swift in Sources */,
 				9DA5DBE323AC211E007E4EA5 /* RepositoryAssembly.swift in Sources */,
@@ -736,11 +754,13 @@
 				9DA5DC1223AC2148007E4EA5 /* Resource.swift in Sources */,
 				9DA5DBE023AC211E007E4EA5 /* NetworkConfig.swift in Sources */,
 				9DA5DC1423AC2148007E4EA5 /* ScoreRepository.swift in Sources */,
+				9DA5DC4123AC38A0007E4EA5 /* Views.swift in Sources */,
 				9DA5DBDE23AC211E007E4EA5 /* HomeAssembly.swift in Sources */,
 				9DA5DC0D23AC2148007E4EA5 /* HomeViewModel.swift in Sources */,
 				9DA5DBE223AC211E007E4EA5 /* AppAssembly.swift in Sources */,
 				9DA5DC0B23AC2148007E4EA5 /* RxViewModel.swift in Sources */,
 				9DA5DC1B23AC2148007E4EA5 /* ScoreAPI.swift in Sources */,
+				9DA5DC4023AC38A0007E4EA5 /* ImageViews.swift in Sources */,
 				9DA5DBA623AC2066007E4EA5 /* SceneDelegate.swift in Sources */,
 				9DA5DBDF23AC211E007E4EA5 /* HelperAssembly.swift in Sources */,
 				9DA5DC0E23AC2148007E4EA5 /* HomeViewController+Layout.swift in Sources */,
