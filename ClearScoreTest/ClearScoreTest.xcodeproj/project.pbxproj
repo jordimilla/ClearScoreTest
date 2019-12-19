@@ -43,9 +43,6 @@
 		9DA5DC1D23AC2148007E4EA5 /* ScoreMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5DC0623AC2148007E4EA5 /* ScoreMapper.swift */; };
 		9DA5DC1E23AC2148007E4EA5 /* ResponseTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5DC0923AC2148007E4EA5 /* ResponseTO.swift */; };
 		9DA5DC1F23AC2148007E4EA5 /* ScoreTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5DC0A23AC2148007E4EA5 /* ScoreTO.swift */; };
-		9DA5DC2623AC26FC007E4EA5 /* UIView+Anchors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5DC2323AC26FC007E4EA5 /* UIView+Anchors.swift */; };
-		9DA5DC2723AC26FC007E4EA5 /* ImageViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5DC2423AC26FC007E4EA5 /* ImageViews.swift */; };
-		9DA5DC2823AC26FC007E4EA5 /* Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5DC2523AC26FC007E4EA5 /* Views.swift */; };
 		9DA5DC2A23AC2B91007E4EA5 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5DC2923AC2B91007E4EA5 /* CircularProgressView.swift */; };
 		9DA5DC3223AC340A007E4EA5 /* MoviesRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5DC2D23AC3409007E4EA5 /* MoviesRepositoryTests.swift */; };
 		9DA5DC3323AC340A007E4EA5 /* MockMoviesServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5DC3123AC340A007E4EA5 /* MockMoviesServices.swift */; };
@@ -112,9 +109,6 @@
 		9DA5DC0623AC2148007E4EA5 /* ScoreMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreMapper.swift; sourceTree = "<group>"; };
 		9DA5DC0923AC2148007E4EA5 /* ResponseTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseTO.swift; sourceTree = "<group>"; };
 		9DA5DC0A23AC2148007E4EA5 /* ScoreTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreTO.swift; sourceTree = "<group>"; };
-		9DA5DC2323AC26FC007E4EA5 /* UIView+Anchors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Anchors.swift"; sourceTree = "<group>"; };
-		9DA5DC2423AC26FC007E4EA5 /* ImageViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViews.swift; sourceTree = "<group>"; };
-		9DA5DC2523AC26FC007E4EA5 /* Views.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Views.swift; sourceTree = "<group>"; };
 		9DA5DC2923AC2B91007E4EA5 /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
 		9DA5DC2D23AC3409007E4EA5 /* MoviesRepositoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesRepositoryTests.swift; sourceTree = "<group>"; };
 		9DA5DC3123AC340A007E4EA5 /* MockMoviesServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockMoviesServices.swift; sourceTree = "<group>"; };
@@ -273,7 +267,6 @@
 		9DA5DBE523AC2148007E4EA5 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				9DA5DC2223AC26FC007E4EA5 /* Extensions */,
 				9DA5DBE623AC2148007E4EA5 /* Common */,
 				9DA5DBE923AC2148007E4EA5 /* Score */,
 				9DA5DBEF23AC2148007E4EA5 /* Model */,
@@ -441,17 +434,6 @@
 				9DA5DBD323AC211E007E4EA5 /* DI */,
 			);
 			path = App;
-			sourceTree = "<group>";
-		};
-		9DA5DC2223AC26FC007E4EA5 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				9DA5DC2323AC26FC007E4EA5 /* UIView+Anchors.swift */,
-				9DA5DC2423AC26FC007E4EA5 /* ImageViews.swift */,
-				9DA5DC2523AC26FC007E4EA5 /* Views.swift */,
-			);
-			name = Extensions;
-			path = "../../../shotl-test/TestGeneric/TestGeneric/TestGeneric/Presentation/Extensions";
 			sourceTree = "<group>";
 		};
 		9DA5DC2B23AC3409007E4EA5 /* Data */ = {
@@ -739,9 +721,7 @@
 				9DA5DC1C23AC2148007E4EA5 /* ScoreServices.swift in Sources */,
 				9DA5DC1323AC2148007E4EA5 /* SchedulerHelper.swift in Sources */,
 				9DA5DBA423AC2066007E4EA5 /* AppDelegate.swift in Sources */,
-				9DA5DC2623AC26FC007E4EA5 /* UIView+Anchors.swift in Sources */,
 				9DA5DC1923AC2148007E4EA5 /* MoyaPlugins.swift in Sources */,
-				9DA5DC2723AC26FC007E4EA5 /* ImageViews.swift in Sources */,
 				9DA5DC2A23AC2B91007E4EA5 /* CircularProgressView.swift in Sources */,
 				9DA5DC1F23AC2148007E4EA5 /* ScoreTO.swift in Sources */,
 				9DA5DC1523AC2148007E4EA5 /* Score.swift in Sources */,
@@ -753,7 +733,6 @@
 				9DA5DC0F23AC2148007E4EA5 /* HomeViewController.swift in Sources */,
 				9DA5DC1A23AC2148007E4EA5 /* MoyaFactory.swift in Sources */,
 				9DA5DBE123AC211E007E4EA5 /* Tags.swift in Sources */,
-				9DA5DC2823AC26FC007E4EA5 /* Views.swift in Sources */,
 				9DA5DC1223AC2148007E4EA5 /* Resource.swift in Sources */,
 				9DA5DBE023AC211E007E4EA5 /* NetworkConfig.swift in Sources */,
 				9DA5DC1423AC2148007E4EA5 /* ScoreRepository.swift in Sources */,
