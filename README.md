@@ -2,6 +2,8 @@
 
 Clean Architecture and MVVM
 
+![alt text](https://raw.githubusercontent.com/wiki/android/architecture-samples/images/mvp-clean.png)
+
 # Presentation Layer 
 contains UI that are coordinated by Presenters/ViewModels which execute 1 or multiple Use cases. Presentation Layer depends on Domain Layer.
 
